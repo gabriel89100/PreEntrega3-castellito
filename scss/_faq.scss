@@ -1,0 +1,22 @@
+.encabezadofaq {
+  background-color: #4a1d8d;
+  grid-area: header;
+  width: auto;
+  height: 50px;
+}
+
+.navfaq ul {
+  font-size: 21px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.navfaq li {
+  display: inline-block;
+}
+.navfaq a {
+  color: black;
+}

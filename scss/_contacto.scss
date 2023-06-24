@@ -1,0 +1,42 @@
+.cuerpocontacto {
+  background-color: $addit-color;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: auto auto auto;
+  grid-template-areas:
+    "header header header"
+    "div section section"
+    "footer footer footer";
+}
+
+.encabezadocontacto {
+  background-color: #4a1d8d;
+  grid-area: header;
+  width: auto;
+  height: 130px;
+}
+
+.navcontacto ul {
+  font-size: 21px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.navcontacto li {
+  display: inline-block;
+}
+.navcontacto a {
+  color: black;
+}
+.fotocontacto {
+  height: 150px;
+}
+.formulariocontacto {
+  height: auto;
+}
+.mapacontacto {
+  width: 530px;
+}

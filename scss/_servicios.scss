@@ -1,0 +1,33 @@
+.listaitem {
+  font-size: medium;
+  color: $primary-color;
+}
+
+.cuerposervicio {
+  background-color: #1d8d84;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: auto auto;
+}
+.encabezadoservicio {
+  background-color: #4a1d8d;
+  grid-area: header;
+  width: auto;
+  height: 130px;
+}
+
+.navservicio ul {
+  font-size: 21px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.navservicio li {
+  display: inline-block;
+}
+.navservicio a {
+  color: black;
+}
