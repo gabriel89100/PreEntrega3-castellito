@@ -85,6 +85,22 @@ footer {
   outline: 2px solid rgb(37, 37, 43);
 }
 
+@media screen and (min-width: 680px) {
+  .body {
+    margin: 0;
+    padding: 1rem;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-rows: auto auto 1fr auto;
+    min-height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "nav" "section" "footer";
+  }
+  .navegador ul {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 .encabezadofaq {
   background-color: #4a1d8d;
   grid-area: header;
@@ -129,10 +145,27 @@ footer {
   background-image: linear-gradient to left, red, yellow;
 }
 
+@media screen and (max-width: 680px) {
+  .cuerponosotros {
+    margin: 0;
+    padding: 1rem;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-rows: auto auto 1fr auto;
+    min-height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "nav" "section" "footer";
+  }
+  .navnosotros ul {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 .listaitem {
   font-size: large;
   font-family: Georgia, "Times New Roman", Times, serif;
   color: #6d32a8;
+  padding: 25px;
 }
 
 .cuerposervicio {
@@ -154,6 +187,7 @@ footer {
 .biblioteca {
   height: 40rem;
   width: 55rem;
+  padding: 12px;
 }
 
 .navservicio ul {
@@ -177,8 +211,25 @@ footer {
 .parrafoservicio {
   font-size: x-large;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 25px;
 }
 
+@media screen and (max-width: 680px) {
+  .cuerposervicio {
+    margin: 0;
+    padding: 1rem;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-rows: auto auto 1fr auto;
+    min-height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "nav" "section" "footer";
+  }
+  .navservicio ul {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 .encabezadofaq {
   background-color: #4a1d8d;
   grid-area: header;
@@ -196,6 +247,9 @@ footer {
 
 .detallefaq {
   color: white;
+  margin: 10px;
+  padding: 15px;
+  font-size: xx-large;
 }
 
 .navfaq ul {
@@ -221,11 +275,29 @@ footer {
   transition: 3s;
 }
 
+@media screen and (max-width: 680px) {
+  .cuerpofaq {
+    margin: 0;
+    padding: 1rem;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-rows: auto auto 1fr auto;
+    min-height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "nav" "section" "footer";
+  }
+  .navfaq ul {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 .cuerpocontacto {
   background-color: gray;
   display: grid;
   grid-template-rows: auto 1fr auto;
   grid-template-columns: auto auto auto;
+  gap: 1rem;
+  min-height: 100vh;
   grid-template-areas: "header header header" "div section section" "footer footer footer";
 }
 
@@ -234,6 +306,10 @@ footer {
   grid-area: header;
   width: auto;
   height: 130px;
+}
+
+.footer {
+  grid-area: footer;
 }
 
 .navcontacto ul {
@@ -257,6 +333,7 @@ footer {
 .fotocontacto {
   height: 150px;
   padding: 30px;
+  grid-area: div;
 }
 
 .formulariocontacto {
@@ -276,6 +353,23 @@ footer {
 
 .limpiar:hover {
   background: #eb1c3b;
+}
+
+@media screen and (max-width: 680px) {
+  .cuerpocontacto {
+    margin: 0;
+    padding: 1rem;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-rows: auto 1fr 1fr auto;
+    min-height: 100vh;
+    grid-template-columns: auto;
+    grid-template-areas: "header" "div" "section" "footer";
+  }
+  .navcontacto ul {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

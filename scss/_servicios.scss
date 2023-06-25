@@ -2,6 +2,7 @@
   font-size: large;
   font-family: Georgia, "Times New Roman", Times, serif;
   color: $primary-color;
+  padding: 25px;
 }
 
 .cuerposervicio {
@@ -24,6 +25,7 @@
 .biblioteca {
   height: 40rem;
   width: 55rem;
+  padding: 12px;
 }
 
 .navservicio ul {
@@ -44,4 +46,25 @@
 .parrafoservicio {
   font-size: x-large;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 25px;
+}
+@media screen and (max-width: 680px) {
+  .cuerposervicio {
+    margin: 0;
+    padding: 1rem;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-rows: auto auto 1fr auto;
+    min-height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "nav"
+      "section"
+      "footer";
+  }
+  .navservicio ul {
+    display: flex;
+    justify-content: space-between;
+  }
 }
