@@ -2,9 +2,23 @@
   background-color: #4a1d8d;
   grid-area: header;
   width: auto;
-  height: 50px;
+  height: 1.125rem;
 }
 
+.cuerponosotros {
+  display: grid;
+  grid-template-rows: 8rem 1fr auto;
+  grid-template-columns: auto auto;
+  grid-template-areas:
+    "header header"
+    "section div"
+    "footer footer";
+}
+.detallenosotros {
+  color: white;
+  font-size: x-large;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
 .navnosotros ul {
   font-size: 21px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -19,4 +33,9 @@
 }
 .navnosotros a {
   color: black;
+}
+.fotonosotros {
+  height: 40rem;
+  width: 55rem;
+  background-image: linear-gradient (to left, red, yellow);
 }

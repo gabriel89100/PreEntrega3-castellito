@@ -89,7 +89,20 @@ footer {
   background-color: #4a1d8d;
   grid-area: header;
   width: auto;
-  height: 50px;
+  height: 1.125rem;
+}
+
+.cuerponosotros {
+  display: grid;
+  grid-template-rows: 8rem 1fr auto;
+  grid-template-columns: auto auto;
+  grid-template-areas: "header header" "section div" "footer footer";
+}
+
+.detallenosotros {
+  color: white;
+  font-size: x-large;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 .navnosotros ul {
@@ -110,16 +123,25 @@ footer {
   color: black;
 }
 
+.fotonosotros {
+  height: 40rem;
+  width: 55rem;
+  background-image: linear-gradient to left, red, yellow;
+}
+
 .listaitem {
-  font-size: medium;
+  font-size: large;
+  font-family: Georgia, "Times New Roman", Times, serif;
   color: #6d32a8;
 }
 
 .cuerposervicio {
   background-color: #1d8d84;
+  background-image: linear-gradient(to left, #15544f, #0b5751, #17ada1);
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: auto 1fr auto;
   grid-template-columns: auto auto;
+  grid-template-areas: " header header header" "section section" "footer footer footer";
 }
 
 .encabezadoservicio {
@@ -127,6 +149,11 @@ footer {
   grid-area: header;
   width: auto;
   height: 130px;
+}
+
+.biblioteca {
+  height: 40rem;
+  width: 55rem;
 }
 
 .navservicio ul {
@@ -147,11 +174,28 @@ footer {
   color: black;
 }
 
+.parrafoservicio {
+  font-size: x-large;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
 .encabezadofaq {
   background-color: #4a1d8d;
   grid-area: header;
   width: auto;
-  height: 50px;
+  height: 8.125rem;
+}
+
+.cuerpofaq {
+  background-color: #000000;
+  display: grid;
+  grid-template-rows: 8rem 1fr auto;
+  grid-template-columns: auto auto;
+  grid-template-areas: " header header " "section div" "footer footer ";
+}
+
+.detallefaq {
+  color: white;
 }
 
 .navfaq ul {
@@ -170,6 +214,11 @@ footer {
 
 .navfaq a {
   color: black;
+}
+
+.magopensante:hover {
+  transform: translate(50px, 50px);
+  transition: 3s;
 }
 
 .cuerpocontacto {
@@ -207,14 +256,26 @@ footer {
 
 .fotocontacto {
   height: 150px;
+  padding: 30px;
 }
 
 .formulariocontacto {
   height: auto;
+  padding: 10px;
+  margin: 14px;
 }
 
 .mapacontacto {
   width: 530px;
+  padding: 30px;
+}
+
+.enviar:hover {
+  background: #2035d6;
+}
+
+.limpiar:hover {
+  background: #eb1c3b;
 }
 
 /*# sourceMappingURL=style.css.map */
