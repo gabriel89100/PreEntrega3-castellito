@@ -118,6 +118,8 @@ footer {
   display: grid;
   grid-template-rows: 8rem 1fr auto;
   grid-template-columns: auto auto;
+  gap: 1rem;
+  min-height: 100vh;
   grid-template-areas: "header header" "section div" "footer footer";
 }
 
@@ -180,6 +182,8 @@ footer {
   display: grid;
   grid-template-rows: auto 1fr auto;
   grid-template-columns: auto auto;
+  gap: 1rem;
+  min-height: 100vh;
   grid-template-areas: " header header header" "section section div" "footer footer footer";
 }
 
@@ -250,8 +254,10 @@ footer {
 .cuerpofaq {
   background-color: #000000;
   display: grid;
-  grid-template-rows: 8rem 1fr auto;
+  grid-template-rows: auto 1fr auto;
   grid-template-columns: auto auto;
+  gap: 1rem;
+  min-height: 100vh;
   grid-template-areas: " header header " "section div" "footer footer ";
 }
 
@@ -380,6 +386,11 @@ footer {
     display: flex;
     justify-content: space-between;
   }
+}
+.hechopor {
+  color: black;
+  font-size: 20px;
+  grid-area: footer;
 }
 
 /*# sourceMappingURL=style.css.map */

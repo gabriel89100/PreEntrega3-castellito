@@ -8,8 +8,10 @@
 .cuerpofaq {
   background-color: #000000;
   display: grid;
-  grid-template-rows: 8rem 1fr auto;
+  grid-template-rows: auto 1fr auto;
   grid-template-columns: auto auto;
+  gap: 1rem;
+  min-height: 100vh;
   grid-template-areas:
     " header header "
     "section div"
