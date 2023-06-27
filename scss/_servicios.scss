@@ -13,7 +13,7 @@
   grid-template-columns: auto auto;
   grid-template-areas:
     " header header header"
-    "section section"
+    "section section div"
     "footer footer footer";
 }
 .encabezadoservicio {
@@ -48,6 +48,10 @@
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   padding: 25px;
 }
+#carouselExampleIndicators {
+  grid-area: auto;
+}
+
 @media screen and (max-width: 680px) {
   .cuerposervicio {
     margin: 0;
