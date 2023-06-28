@@ -10,7 +10,7 @@
   background-image: linear-gradient(to left, #15544f, #0b5751, #17ada1);
   display: grid;
   grid-template-rows: auto 1fr auto;
-  grid-template-columns: auto auto;
+  grid-template-columns: 800px auto;
   gap: 1rem;
   min-height: 100vh;
   grid-template-areas:
@@ -25,8 +25,8 @@
   height: 130px;
 }
 .biblioteca {
-  height: 40rem;
-  width: 55rem;
+  height: 440px;
+  width: 480px;
   padding: 12px;
 }
 
@@ -49,9 +49,11 @@
   font-size: x-large;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   padding: 25px;
+  align-items: normal;
 }
-#carouselExampleIndicators {
-  grid-area: auto;
+
+.carousel-item {
+  padding: 110px;
 }
 
 @media screen and (max-width: 680px) {

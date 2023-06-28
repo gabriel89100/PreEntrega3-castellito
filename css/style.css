@@ -7,6 +7,7 @@
 header {
   background-color: #4a1d8d;
   grid-area: header;
+  margin: 1px;
   padding: 8px;
 }
 
@@ -30,11 +31,6 @@ header {
 
 .container {
   background: black;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  grid-template-columns: auto auto auto;
-  min-height: 100vh;
-  grid-template-areas: "header header header " "nav section div " "footer footer footer";
 }
 
 h1 {
@@ -49,11 +45,12 @@ body {
   border-width: 15px;
   border-color: goldenrod;
   border-style: double;
+  grid-area: auto;
 }
 
 .item1 {
   margin: auto;
-  width: 530px;
+  width: 430px;
   height: 850px;
   text-align: center;
   color: #4a1d8d;
@@ -67,40 +64,41 @@ footer {
   height: 130px;
 }
 
-.container {
+div {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
 }
 
 .principio {
   margin: auto;
   width: 550px;
-  height: 950px;
+  height: 750px;
   border: 4px solid goldenrod;
   overflow-x: hidden;
   overflow-y: hidden;
   padding: 5px;
   color: beige;
+  margin: 2px;
 }
 
 .principio:hover .borde-redondiado {
-  width: 200px;
+  width: 300px;
   position: relative;
-  top: 0;
-  left: 0;
+  top: 1;
+  left: 1;
   outline: 2px solid rgb(37, 37, 43);
 }
 
 @media screen and (min-width: 680px) {
   .body {
     margin: 0;
-    padding: 1rem;
+    padding: 3px;
     display: grid;
     grid-gap: 1rem;
-    grid-template-rows: auto auto 1fr auto;
+    grid-template-rows: auto auto auto auto;
     min-height: 100vh;
     grid-template-columns: 1fr;
-    grid-template-areas: "header" "nav" "section" "footer";
+    grid-template-areas: "header" "nav" "section" "div" "footer";
   }
   .navegador ul {
     display: flex;
@@ -181,7 +179,7 @@ footer {
   background-image: linear-gradient(to left, #15544f, #0b5751, #17ada1);
   display: grid;
   grid-template-rows: auto 1fr auto;
-  grid-template-columns: auto auto;
+  grid-template-columns: 800px auto;
   gap: 1rem;
   min-height: 100vh;
   grid-template-areas: " header header header" "section section div" "footer footer footer";
@@ -195,8 +193,8 @@ footer {
 }
 
 .biblioteca {
-  height: 40rem;
-  width: 55rem;
+  height: 440px;
+  width: 480px;
   padding: 12px;
 }
 
@@ -222,10 +220,11 @@ footer {
   font-size: x-large;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   padding: 25px;
+  align-items: normal;
 }
 
-#carouselExampleIndicators {
-  grid-area: auto;
+.carousel-item {
+  padding: 110px;
 }
 
 @media screen and (max-width: 680px) {
@@ -347,7 +346,7 @@ footer {
 }
 
 .fotocontacto {
-  height: 150px;
+  height: 700px;
   padding: 30px;
   grid-area: div;
 }
