@@ -6,10 +6,10 @@
 
 header {
   background-color: #4a1d8d;
-  grid-area: header;
   margin: 1px;
   height: 130px;
   padding: 8px;
+  grid-area: header;
 }
 
 .navegador ul {
@@ -31,13 +31,13 @@ header {
   background: black;
   display: grid;
   grid-template-rows: auto auto auto;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto auto auto;
   gap: 1rem;
   min-height: 100vh;
   grid-template-areas:
-    " header header "
-    "section div"
-    "footer footer ";
+    " header header header "
+    "section div div"
+    "footer footer footer ";
 }
 
 h1 {
@@ -50,7 +50,6 @@ h1 {
   border-width: 15px;
   border-color: goldenrod;
   border-style: double;
-  grid-area: auto;
 }
 
 .item1 {
@@ -69,7 +68,7 @@ footer {
 .seccionindex {
   display: flex;
   flex-direction: row;
-  grid-area: auto;
+  grid-area: section;
 }
 
 .principio {
@@ -97,14 +96,13 @@ footer {
 @media screen and (max-width: 680px) {
   .cuerpoindex {
     display: grid;
-    grid-template-rows: auto auto auto auto auto;
-    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 1fr;
     grid-template-areas:
-      "header header "
-      "nav nav"
-      "section section"
-      "div div"
-      "footer footer";
+      "header"
+      "section"
+      "div"
+      "footer";
   }
   .navegador ul {
     display: flex;
