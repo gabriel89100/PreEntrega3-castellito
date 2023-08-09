@@ -2,10 +2,11 @@
   background-color: #4a1d8d;
   grid-area: header;
   width: auto;
-  height: 1.125rem;
+  height: 130px;
 }
 
 .cuerponosotros {
+  background-color: black;
   display: grid;
   grid-template-rows: auto 1fr auto;
   grid-template-columns: auto auto;

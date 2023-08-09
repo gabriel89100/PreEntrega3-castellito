@@ -58,11 +58,12 @@
 }
 @media screen and (max-width: 680px) {
   .cuerpocontacto {
+    font-size: small;
     margin: 0;
     padding: 1rem;
     display: grid;
     grid-gap: 1rem;
-    grid-template-rows: auto 1fr 1fr auto;
+    grid-template-rows: auto auto auto auto;
     min-height: 100vh;
     grid-template-columns: auto;
     grid-template-areas:

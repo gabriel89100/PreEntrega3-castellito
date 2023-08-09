@@ -3,11 +3,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 header {
   background-color: #4a1d8d;
   grid-area: header;
   margin: 1px;
-
+  height: 130px;
   padding: 8px;
 }
 
@@ -18,7 +19,7 @@ header {
   text-align: center;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 8px;
+  margin-bottom: 50px;
 }
 .navegador li {
   display: inline-block;
@@ -26,15 +27,25 @@ header {
 .navegador a {
   color: black;
 }
-.container {
+.cuerpoindex {
   background: black;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: auto auto;
+  gap: 1rem;
+  min-height: 100vh;
+  grid-template-areas:
+    " header header "
+    "section div"
+    "footer footer ";
 }
+
 h1 {
   color: white;
+  padding: 15px;
+  font-size: 50px;
 }
-body {
-  background-color: rgb(50, 77, 92);
-}
+
 .video-youtube {
   border-width: 15px;
   border-color: goldenrod;
@@ -43,7 +54,7 @@ body {
 }
 
 .item1 {
-  margin: auto;
+  margin: 15px;
   width: 430px;
   height: 850px;
   text-align: center;
@@ -54,11 +65,11 @@ body {
 footer {
   background-color: rgb(209, 203, 203);
   grid-area: footer;
-  height: 130px;
 }
-div {
+.seccionindex {
   display: flex;
   flex-direction: row;
+  grid-area: auto;
 }
 
 .principio {
@@ -74,26 +85,26 @@ div {
 }
 .principio:hover .borde-redondiado {
   width: 300px;
+  margin: 50px;
   position: relative;
   top: 1;
   left: 1;
   outline: 2px solid rgb(37, 37, 43);
 }
-@media screen and (min-width: 680px) {
-  .body {
-    margin: 0;
-    padding: 3px;
+.redes {
+  font-size: small;
+}
+@media screen and (max-width: 680px) {
+  .cuerpoindex {
     display: grid;
-    grid-gap: 1rem;
-    grid-template-rows: auto auto auto auto;
-    min-height: 100vh;
-    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-columns: auto auto;
     grid-template-areas:
-      "header"
-      "nav"
-      "section"
-      "div"
-      "footer";
+      "header header "
+      "nav nav"
+      "section section"
+      "div div"
+      "footer footer";
   }
   .navegador ul {
     display: flex;
