@@ -7,8 +7,7 @@
 header {
   background-color: #4a1d8d;
   margin: 1px;
-  height: 130px;
-  padding: 8px;
+  height: 8.125rem;
   grid-area: header;
 }
 
@@ -101,9 +100,9 @@ footer {
 @media screen and (max-width: 680px) {
   .cuerpoindex {
     display: grid;
-    grid-template-rows: auto auto auto auto;
+    grid-template-rows: auto;
     grid-template-columns: 1fr;
-    grid-template-areas: "header" "section" "div" "footer";
+    grid-template-areas: "header" "section" "item1" "youtube" "footer";
   }
   .navegador ul {
     display: flex;
@@ -317,18 +316,18 @@ footer {
 .cuerpocontacto {
   background-color: gray;
   display: grid;
-  grid-template-rows: auto 1fr auto;
+  grid-template-rows: auto auto auto;
   grid-template-columns: auto auto auto;
   gap: 1rem;
   min-height: 100vh;
-  grid-template-areas: "header header header" "div section section" "footer footer footer";
+  grid-template-areas: "header header header" "fotocontacto formulariocontacto mapacontacto" "footer footer footer";
 }
 
 .encabezadocontacto {
   background-color: #4a1d8d;
   grid-area: header;
   width: auto;
-  height: 130px;
+  height: 8.125rem;
 }
 
 .footer {
@@ -356,7 +355,6 @@ footer {
 .fotocontacto {
   height: 700px;
   padding: 30px;
-  grid-area: div;
 }
 
 .formulariocontacto {
@@ -368,6 +366,7 @@ footer {
 .mapacontacto {
   width: 530px;
   padding: 30px;
+  grid-area: mapacontacto;
 }
 
 .enviar:hover {
@@ -385,10 +384,10 @@ footer {
     padding: 1rem;
     display: grid;
     grid-gap: 1rem;
-    grid-template-rows: auto auto auto auto;
+    grid-template-rows: auto;
     min-height: 100vh;
-    grid-template-columns: auto;
-    grid-template-areas: "header" "div" "section" "footer";
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "fotocontacto" "formulariocontacto" "mapacontacto" "footer";
   }
   .navcontacto ul {
     display: flex;

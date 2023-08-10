@@ -1,13 +1,13 @@
 .cuerpocontacto {
   background-color: $addit-color;
   display: grid;
-  grid-template-rows: auto 1fr auto;
+  grid-template-rows: auto auto auto;
   grid-template-columns: auto auto auto;
   gap: 1rem;
   min-height: 100vh;
   grid-template-areas:
     "header header header"
-    "div section section"
+    "fotocontacto formulariocontacto mapacontacto"
     "footer footer footer";
 }
 
@@ -15,7 +15,7 @@
   background-color: #4a1d8d;
   grid-area: header;
   width: auto;
-  height: 130px;
+  height: 8.125rem;
 }
 .footer {
   grid-area: footer;
@@ -39,7 +39,6 @@
 .fotocontacto {
   height: 700px;
   padding: 30px;
-  grid-area: div;
 }
 .formulariocontacto {
   height: auto;
@@ -49,6 +48,7 @@
 .mapacontacto {
   width: 530px;
   padding: 30px;
+  grid-area: mapacontacto;
 }
 .enviar:hover {
   background: #2035d6;
@@ -63,13 +63,14 @@
     padding: 1rem;
     display: grid;
     grid-gap: 1rem;
-    grid-template-rows: auto auto auto auto;
+    grid-template-rows: auto;
     min-height: 100vh;
-    grid-template-columns: auto;
+    grid-template-columns: 1fr;
     grid-template-areas:
       "header"
-      "div"
-      "section"
+      "fotocontacto"
+      "formulariocontacto"
+      "mapacontacto"
       "footer";
   }
   .navcontacto ul {
