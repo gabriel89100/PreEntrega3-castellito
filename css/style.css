@@ -355,6 +355,7 @@ footer {
 .fotocontacto {
   height: 700px;
   padding: 30px;
+  width: 100%;
 }
 
 .formulariocontacto {
@@ -364,7 +365,7 @@ footer {
 }
 
 .mapacontacto {
-  width: 530px;
+  width: 100%;
   padding: 30px;
   grid-area: mapacontacto;
 }
